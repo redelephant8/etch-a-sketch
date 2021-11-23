@@ -4,10 +4,19 @@ body {
   background-color: hsl(218, 56%, 87%);
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 100px;
+}
+
 .container {
   display: grid;
-  width: 800px;
-  height: 800px;
+  width: 750px;
+  height: 750px;
 }
 
 .cell {
@@ -87,4 +96,18 @@ input {
 input {
   background-color: transparent;
   border: none;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: 'Quicksand';
 }
