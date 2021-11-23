@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="main">
+        <div class="menu">
+            <div class="slideContainer">
+                <label for="gridSize">Grid Size</label>
+                <input type="range" min='1' max='100' value='16' class='slider' name="gridSize" id="gridSize">
+                <p id="label"></p>
+            </div>
+            <button class="clear" onclick="resetGrid()">Clear</button>
+            <button onclick="addColor('black')">Black</button>
+            <button onclick="addColor('random')">Random</button>
+            <button onclick="addColor('darken')">Slowly Darken</button>
+            <div class="chooseColorButton">
+                <label for="colorChoice">Choose Color:</label>
+                <input name="colorChoice" onclick="addColor('color')" type="color" id="colorChoice">
+            </div>
+        </div>
+        <div class="container"></div>
+    </div>
+</body>
+
+</html>
